@@ -24,7 +24,6 @@ This project is an imaginary Event orginizing website specifically a betta fish 
 
 - HTML5
 - CSS3
-- JavaScript
 - Sass
 
 ## Features

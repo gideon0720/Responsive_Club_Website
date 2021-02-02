@@ -45,6 +45,10 @@ header {
   height: 3rem;
   z-index: 10;
 
+  a {
+    color: $primarytext;
+  }
+
   nav {
     @include flexMe(row, space-evenly);
     padding-right: 2rem;
@@ -53,8 +57,15 @@ header {
       margin-left: 1.5rem;
 
       a {
+        cursor: pointer;
         text-decoration: none;
         color: $primarytext;
+        border-bottom: solid 1px transparent;
+        transition: border-bottom 0.5s ease-out;
+
+        &:hover {
+          border-bottom: solid 1px $secondarycolor;
+        }
       }
     }
   }
@@ -117,6 +128,7 @@ main {
 #event {
   background-color: $backcolor;
   color: $primarytext;
+  padding-bottom: 2rem;
 
   h2 {
     margin-bottom: 3rem;
@@ -132,6 +144,7 @@ main {
       width: 300px;
       border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
+      height: 200px;
     }
   }
 }
@@ -186,5 +199,62 @@ footer {
   h5 {
     margin: 0;
     color: $secondarytext;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 96%;
+  }
+
+  #intro {
+    @include flexMe(row, space-between);
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $secondarytext;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.1;
+    }
+
+    &::after {
+      content: '';
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: #ce9797;
+      position: absolute;
+      bottom: 0;
+      right: 30%;
+      opacity: 0.1;
+    }
+
+    .left-side {
+      margin-top: 0;
+      padding-top: 0;
+      text-align: left;
+
+      a {
+        margin-left: 0;
+      }
+    }
+
+    img {
+      width: 30%;
+      border-radius: 50%;
+    }
+  }
+
+  #event {
+    padding-bottom: 2rem;
   }
 }

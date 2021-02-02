@@ -1,0 +1,190 @@
+// Google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+// My shortcuts
+
+$primarycolor: #797919;
+$secondarycolor: black;
+$primarytext: #2c2a2a;
+$secondarytext: #c9c0c0;
+$backcolor: #dedae4;
+
+@mixin flexMe($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+// Body style
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  position: relative;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// Header style
+
+header {
+  @include flexMe(row, space-between);
+  padding: 0 2rem;
+  background-color: $primarycolor;
+  color: $primarytext;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 95%;
+  height: 3rem;
+  z-index: 10;
+
+  nav {
+    @include flexMe(row, space-evenly);
+    padding-right: 2rem;
+
+    p {
+      margin-left: 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: $primarytext;
+      }
+    }
+  }
+}
+
+// Main style
+
+main {
+  margin-top: 3rem;
+}
+
+// Intro style
+
+#intro {
+  background-color: $secondarycolor;
+
+  .left-side {
+    padding: 1rem;
+    margin: 1rem;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      background-color: $primarycolor;
+      margin: 1rem;
+      padding: 1rem 3rem;
+      border-radius: 1rem;
+      color: $secondarytext;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.container {
+  @include flexMe(column, center);
+  text-align: center;
+  color: $secondarytext;
+  padding-top: 2rem;
+
+  img {
+    width: 350px;
+  }
+}
+
+// Event style
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+
+#event {
+  background-color: $backcolor;
+  color: $primarytext;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    @include flexMe(column, center);
+    border: solid 2px $secondarycolor;
+    border-radius: 2rem;
+    margin: 1rem;
+
+    img {
+      width: 300px;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+  }
+}
+
+#team {
+  background-color: $primarycolor;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+  .card {
+    border: solid 1.5px $secondarytext;
+    border-radius: 1rem;
+    width: 220px;
+    height: 250px;
+    margin: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: -70px;
+      right: 35px;
+      display: block;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      margin-top: 6rem;
+    }
+  }
+}
+
+#contact {
+  background-color: $backcolor;
+  padding-bottom: 3rem;
+  color: $secondarycolor;
+
+  .contacts {
+    text-align: left;
+  }
+}
+
+footer {
+  background-color: $secondarycolor;
+  margin: 0;
+  padding: 1.3rem;
+
+  h5 {
+    margin: 0;
+    color: $secondarytext;
+  }
+}

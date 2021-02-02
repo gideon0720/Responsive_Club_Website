@@ -1,1 +1,220 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+  position: relative;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  background-color: #797919;
+  color: #2c2a2a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 95%;
+  height: 3rem;
+  z-index: 10;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+}
+
+header nav p {
+  margin-left: 1.5rem;
+}
+
+header nav p a {
+  text-decoration: none;
+  color: #2c2a2a;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+#intro {
+  background-color: black;
+}
+
+#intro .left-side {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#intro .left-side h1 {
+  text-transform: uppercase;
+}
+
+#intro .left-side p {
+  margin-bottom: 2rem;
+}
+
+#intro .left-side a {
+  background-color: #797919;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  color: #c9c0c0;
+  text-transform: uppercase;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #c9c0c0;
+  padding-top: 2rem;
+}
+
+.container img {
+  width: 350px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#event {
+  background-color: #dedae4;
+  color: #2c2a2a;
+}
+
+#event h2 {
+  margin-bottom: 3rem;
+}
+
+#event .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px black;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+#event .card img {
+  width: 300px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+#team {
+  background-color: #797919;
+}
+
+#team h2 {
+  margin-bottom: 5rem;
+}
+
+#team .card {
+  border: solid 1.5px #c9c0c0;
+  border-radius: 1rem;
+  width: 220px;
+  height: 250px;
+  margin: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+#team .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  right: 35px;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+#team .card h3 {
+  margin-top: 6rem;
+}
+
+#contact {
+  background-color: #dedae4;
+  padding-bottom: 3rem;
+  color: black;
+}
+
+#contact .contacts {
+  text-align: left;
+}
+
+footer {
+  background-color: black;
+  margin: 0;
+  padding: 1.3rem;
+}
+
+footer h5 {
+  margin: 0;
+  color: #c9c0c0;
+}
+/*# sourceMappingURL=style.css.map */
